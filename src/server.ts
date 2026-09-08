@@ -29,7 +29,9 @@ app.get("/api/report", (_req, res) => {
   });
 });
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
   console.log("=================================");
   console.log("        LA INSIGHT AI");
   console.log(" AI Daily Crypto Report Agent");
